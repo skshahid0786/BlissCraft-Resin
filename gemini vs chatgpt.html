@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Setup -->
+    <title>BlissCraft Resin – Handmade Keychain Creations</title>
+    <meta name="description" content="BlissCraft Resin – Handmade personalized keychains & custom resin gifts. Custom orders available.">
+    <meta name="keywords" content="resin art Surat, handmade keychains, personalized keychains, custom resin gifts, BlissCraft">
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for aesthetic vectors -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Tailwind Configuration for Aesthetic Theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-indigo': '#1A237E', // Deep Indigo (Trust, Quality, Stability)
+                        'secondary-teal': '#4DB6AC', // Tranquil Teal (Creativity, Calmness, Artisan)
+                        'highlight-gold': '#FFD700', // Bright Gold (Luxury, Focus, Value)
+                        'bg-soft': '#F5F5F5', // Light Gray/Off-White
+                        'text-dark': '#333333',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Georgia', 'serif'], // Elegant fallback
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS for elegant shadows and scroll behavior -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            width: 100%;
+            font-family: 'Inter', sans-serif;
+            background-color: theme('colors.bg-soft');
+            color: theme('colors.text-dark');
+            scroll-behavior: smooth;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 3px;
+            background-color: theme('colors.highlight-gold');
+            border-radius: 9999px;
+        }
+        .gold-glow {
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+        .gold-glow:hover {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center max-w-7xl">
+            <a href="#" class="text-2xl font-serif font-bold text-primary-indigo tracking-wide">BlissCraft Resin</a>
+            <a href="#custom-order" class="hidden sm:inline-block bg-primary-indigo text-white py-2 px-4 rounded-full hover:bg-primary-indigo/90 transition duration-300 shadow-lg">
+                Order Custom Keychain
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="relative overflow-hidden pt-20 pb-16 md:pt-32 md:pb-24 bg-secondary-teal/40">
+            <div class="container mx-auto px-4 max-w-7xl text-center">
+                <!-- Decorative background elements (handcrafted/aesthetic touch) -->
+                <div class="absolute inset-0 opacity-20 pointer-events-none">
+                    <svg viewBox="0 0 100 100" class="w-full h-full">
+                        <defs>
+                            <pattern id="dot-pattern" width="10" height="10" patternUnits="userSpaceOnUse">
+                                <circle cx="1" cy="1" r="0.5" fill="#ffffff" />
+                            </pattern>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#dot-pattern)" />
+                    </svg>
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-text-dark leading-tight relative z-10">
+                    Handmade Resin Keychains <br class="hidden sm:inline"> Designed Just for You
+                </h1>
+                <p class="mt-4 text-xl sm:text-2xl text-text-dark/80 max-w-3xl mx-auto relative z-10">
+                    Custom keychains & gifts — crafted with bliss in Surat, Gujarat.
+                </p>
+                <a href="#custom-order" class="mt-8 inline-block bg-highlight-gold text-text-dark font-bold py-3 px-8 rounded-full text-lg hover:bg-highlight-gold/80 transition duration-300 shadow-xl gold-glow relative z-10">
+                    Order Custom Keychain
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-bg-soft">
+            <div class="container mx-auto px-4 max-w-5xl">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Our Studio Story</h2>
+                <div class="space-y-6 text-lg leading-relaxed text-center md:text-left">
+                    <p>
+                        BlissCraft Resin was born out of a simple passion: turning liquid art into permanent keepsakes. It started as a personal hobby—experimenting with pigments, glitter, and molds—and quickly grew into a mission to share these unique, handcrafted keychains with the world. We believe every piece of resin art is a tiny, personal universe waiting to be explored.
+                    </p>
+                    <p class="font-semibold">
+                        We prioritize using  quality, non-toxic materials combined with painstaking  attention to detail . Our focus is entirely on  custom designs , ensuring that your resin keychain is uniquely yours, whether it's a personalized initial or a specific custom shape.
+                    </p>
+                    <p class="text-xl font-extrabold text-primary-indigo p-4 border-l-4 border-highlight-gold bg-secondary-teal/50 rounded-lg shadow-inner">
+                        <i data-lucide="sparkles" class="inline-block mr-2 w-5 h-5"></i> Products currently in production —  custom keychain orders are open! 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Upcoming Products Section (Now focused on Keychains) -->
+        <section id="upcoming" class="py-16 md:py-24 bg-primary-indigo/10">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Our Focus: Resin Keychains</h2>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6 text-center max-w-3xl mx-auto">
+                    <!-- Product Placeholder 1 (Keychains) -->
+                    <div class="p-6 bg-white rounded-xl shadow-lg gold-glow flex flex-col items-center">
+                        <i data-lucide="key" class="w-12 h-12 text-primary-indigo mb-3"></i>
+                        <h3 class="text-2xl font-semibold mb-2">Personalized Resin Keychains (  Custom Shapes)</h3>
+                        <p class="text-base text-gray-500">Custom initial keychains with glitter, pigments, and foil fillings. We also offer 10 specific base shapes for truly custom designs.</p>
+                        <a href="#custom-order" class="mt-4 text-sm font-bold text-highlight-gold bg-secondary-teal/70 px-3 py-1 rounded-full hover:bg-highlight-gold hover:text-white transition duration-200">Prebook Your Design</a>
+                    </div>
+                </div>
+
+                <p class="mt-10 text-xl font-semibold text-center text-text-dark">
+                     
+                </p>
+            </div>
+        </section>
+        
+        <!-- 5. Gallery Section -->
+        <section id="gallery" class="py-16 md:py-24 bg-bg-soft">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Sample Keychain Designs</h2>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Placeholder 1: Keychain (A) - Indigo Primary Color -->
+                    <div class="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="https://placehold.co/400x300/1A237E/FFFFFF?text=Initial+Keychain+%27A%27" onerror="this.onerror=null;this.src='https://placehold.co/400x300/1A237E/FFFFFF?text=Initial+Keychain+%27A%27';" alt="Resin Initial Keychain Sample" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <!-- Placeholder 2: Keychain (Heart) - Teal Secondary Color -->
+                    <div class="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="https://placehold.co/400x600/4DB6AC/333333?text=Heart+Keychain" onerror="this.onerror=null;this.src='https://placehold.co/400x600/4DB6AC/333333?text=Heart+Keychain';" alt="Resin Heart Shape Keychain Sample" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <!-- Placeholder 3: Keychain (Star) - Gold Highlight Color -->
+                    <div class="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="https://placehold.co/400x400/FFD700/333333?text=Star+Keychain" onerror="this.onerror=null;this.src='https://placehold.co/400x400/FFD700/333333?text=Star+Keychain';" alt="Resin Star Shape Keychain Sample" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                    <!-- Placeholder 4: Keychain (Rectangle) - Indigo Primary Color -->
+                    <div class="group relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 hidden lg:block">
+                        <img src="https://placehold.co/400x350/1A237E/FFFFFF?text=Rectangle+Keychain" onerror="this.onerror=null;this.src='https://placehold.co/400x350/1A237E/FFFFFF?text=Rectangle+Keychain';" alt="Resin Rectangle Keychain Sample" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+
+                <p class="mt-8 text-center text-lg italic text-text-dark/70">
+                     
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. Custom Order Form -->
+        <section id="custom-order" class="py-16 md:py-24 bg-secondary-teal/40">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl font-bold text-center mb-4 section-title">Design Your Custom Keychain</h2>
+                <p class="text-center text-lg mb-8 text-text-dark/80">
+                    Tell us your vision and we'll bring your dream resin keychain to life.
+                </p>
+
+                <form id="custom-order-form" class="bg-white p-6 sm:p-10 rounded-2xl shadow-2xl space-y-6">
+                    <!-- Updated Message Area for WhatsApp Feedback -->
+                    <div id="form-message" class="hidden p-4 rounded-lg text-center font-semibold text-text-dark border-2 border-secondary-teal"></div>
+
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-text-dark mb-1">Your Name</label>
+                        <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-indigo focus:border-primary-indigo transition duration-200">
+                    </div>
+
+                    <!-- WhatsApp Mobile Number (MANDATORY) -->
+                    <div>
+                        <label for="mobile" class="block text-sm font-medium text-text-dark mb-1">WhatsApp Mobile Number (MANDATORY)</label>
+                        <input type="tel" id="mobile" name="mobile" required placeholder="e.g., +91 98765 43210" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-indigo focus:border-primary-indigo transition duration-200">
+                    </div>
+
+                    <!-- Color Choice -->
+                    <div>
+                        <label for="color-choice" class="block text-sm font-medium text-text-dark mb-1">Color/Theme Choice</label>
+                        <input type="text" id="color-choice" name="color-choice" placeholder="e.g., Deep Indigo, Gold Glitter, Dried Flowers" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-indigo focus:border-primary-indigo transition duration-200">
+                    </div>
+
+                    <!-- Desired Shape (REQUIRED) -->
+                    <div>
+                        <label for="shape" class="block text-sm font-medium text-text-dark mb-1">Desired Shape</label>
+                        <select id="shape" name="shape" required class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary-indigo focus:border-primary-indigo transition duration-200 bg-white appearance-none">
+                            <option value="">-- Select Shape --</option>
+                            <option value="star">Star</option>
+                            <option value="leaf">Leaf or drop shape</option>
+                            <option value="moon">Crescent moon</option>
+                            <option value="oval">Oval</option>
+                            <option value="heart">Heart</option>
+                            <option value="quatrefoil">Quatrefoil (a four-lobed shape)</option>
+                            <option value="rectangle">Rectangle</option>
+                            <option value="circle">Circle</option>
+                            <option value="diamond">Diamond or rhombus</option>
+                            <option value="triangle">Triangle</option>
+                        </select>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <button type="submit" class="w-full bg-primary-indigo text-white font-bold py-4 rounded-xl text-lg hover:bg-primary-indigo/90 transition duration-300 shadow-xl gold-glow flex items-center justify-center">
+                        <i data-lucide="whatsapp" class="w-5 h-5 mr-2"></i> Send Request via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- 6. Pricing Section -->
+        <section id="pricing" class="py-16 md:py-24 bg-bg-soft">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl font-bold text-center mb-4 section-title">Keychain Pricing Guide</h2>
+                <p class="text-center text-lg mb-10 text-text-dark/80">
+                    Pricing varies based on shape size, design complexity, filling materials, and specific customisation requests.
+                </p>
+
+                <div class="bg-white p-6 sm:p-10 rounded-2xl shadow-2xl">
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-secondary-teal/80 text-text-dark">
+                                    <th class="p-4 border-b-2 border-highlight-gold font-semibold text-lg rounded-tl-xl">Keychain Product</th>
+                                    <th class="p-4 border-b-2 border-highlight-gold font-semibold text-lg">Custom Features</th>
+                                    <th class="p-4 border-b-2 border-highlight-gold font-semibold text-lg rounded-tr-xl text-right">Starting Price Range</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="hover:bg-primary-indigo/10 transition duration-200">
+                                    <td class="p-4 font-bold text-primary-indigo">Custom Shaped Keychains</td>
+                                    <td class="p-4 text-gray-700">Detailed shapes (Heart, Star, Drop, etc.) with complex fillings and dual colors.</td>
+                                    <td class="p-4 text-right">₹79 – ₹149</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mt-6 text-sm text-center text-gray-500">
+                         
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Testimonials Section -->
+        <section id="testimonials" class="py-16 md:py-24 bg-primary-indigo/10">
+            <div class="container mx-auto px-4 max-w-7xl">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">What Our Clients Say</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-highlight-gold gold-glow">
+                        <i data-lucide="quote" class="w-8 h-8 text-highlight-gold mb-4"></i>
+                        <p class="italic text-lg text-gray-700">
+                            "Beautiful craftsmanship! The finish is so professional and the color blending is spot on. My keychain is the best accessory on my bag."
+                        </p>
+                        <p class="mt-4 font-semibold text-right text-text-dark">— Priya S. (Surat)</p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-xl border-t-4 border-highlight-gold gold-glow">
+                        <i data-lucide="quote" class="w-8 h-8 text-highlight-gold mb-4"></i>
+                        <p class="italic text-lg text-gray-700">
+                            "Absolutely loved the custom keychain service. They helped me pick the perfect font and managed to capture the exact lavender shade I wanted. Great communication!"
+                        </p>
+                        <p class="mt-4 font-semibold text-right text-text-dark">— Ahmed K. (Custom Order)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FAQ Section (FIXED: Answers now visible by default) -->
+        <section id="faq" class="py-16 md:py-24 bg-bg-soft">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Frequently Asked Questions</h2>
+                
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-secondary-teal">
+                        <h3 class="font-bold text-xl text-primary-indigo mb-2">Do you take custom orders for keychains?</h3>
+                        <p class="text-gray-700">
+                             Yes!  Custom keychain orders are our specialty and are currently  open . Just fill out the Custom Order Form above to get started.
+                        </p>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-secondary-teal">
+                        <h3 class="font-bold text-xl text-primary-indigo mb-2">How long does a resin product take to create?</h3>
+                        <p class="text-gray-700">
+                            The resin itself takes  12–24 hours to cure  (harden). The total creation time, from design consultation to shipping, is typically 3–5 days, depending on the complexity of the design and our current volume of orders.
+                        </p>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-secondary-teal">
+                        <h3 class="font-bold text-xl text-primary-indigo mb-2">What materials do you use?</h3>
+                        <p class="text-gray-700">
+                            We use high-quality, professional-grade epoxy resin. Fillings include fine glitters, mica powders, specialized pigments, gold/silver foil, and carefully preserved dried flowers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- 9. Contact Section & Footer -->
+    <footer id="contact" class="bg-primary-indigo text-white py-12">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <!-- Brand Info -->
+                <div>
+                    <h3 class="text-2xl font-serif font-bold mb-3">BlissCraft Resin</h3>
+                    <p class="text-white/70 italic">Handmade Keychain Art from the heart of Surat.</p>
+                    <p class="mt-4 text-sm">Location: Surat, Gujarat, India</p>
+                </div>
+                
+                <!-- Contact Details -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-3">Get in Touch</h4>
+                    <!-- Contact details updated to use email/socials since phone was removed from form -->
+                    <p class="flex items-center justify-center md:justify-start mb-2">
+                        <i data-lucide="mail" class="w-5 h-5 mr-2"></i> Email: <a href="mailto:shahid202218@gmail.com" class="ml-1 underline hover:text-highlight-gold transition duration-200">shahid202218@gmail.com</a> (Placeholder)
+                    </p>
+                    
+                </div>
+
+                <!-- Social Media -->
+                <div class="md:text-right">
+                    <h4 class="text-xl font-semibold mb-3">Contact now!</h4>
+                    <div class="flex space-x-4 justify-center md:justify-end">
+                       
+                        <a href="https://wa.me/919723649165" target="_blank" aria-label="WhatsApp" class="hover:text-highlight-gold transition duration-200">
+                            <i data-lucide="message-circle" class="w-7 h-7"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center pt-8 mt-8 border-t border-white/50 text-sm">
+                &copy; 2024 BlissCraft Resin. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons (and update them later if new ones are dynamically inserted)
+        lucide.createIcons();
+
+        // Form Submission Handler (WhatsApp Integration)
+        document.getElementById('custom-order-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            const formMessage = document.getElementById('form-message');
+
+            // 1. Get field values
+            const name = document.getElementById('name').value.trim();
+            const mobile = document.getElementById('mobile').value.trim();
+            const color = document.getElementById('color-choice').value.trim() || "Not specified";
+            const shape = document.getElementById('shape').value.trim() || "Not specified";
+
+            // Basic validation check (since fields are 'required', this is mainly a fallback)
+            if (!name || !mobile || shape === "Not specified") {
+                 formMessage.textContent = '❗ Please fill in your Name, WhatsApp Number, and select a Desired Shape.';
+                 formMessage.classList.remove('hidden', 'bg-secondary-teal', 'text-text-dark');
+                 formMessage.classList.add('bg-red-500', 'text-white');
+                 formMessage.scrollIntoView({ behavior: 'smooth' });
+                 return;
+            }
+
+            // 2. Construct the message text
+            const message = `*BlissCraft Resin Custom Order Request*
+
+Hello! I'd like to place a custom keychain order with the following details:
+
+👤 *Customer Name:* ${name}
+📞 *Contact Number:* ${mobile}
+🎨 *Color/Theme:* ${color}
+🔗 *Desired Shape:* ${shape}
+
+Thank you`;
+
+            // 3. URL-encode the message
+            const encodedMessage = encodeURIComponent(message);
+            
+            // 4. Construct the WhatsApp Link (Target: 919723649165)
+            // Note: The number is hardcoded as requested by the user.
+            const whatsappLink = `https://wa.me/919723649165?text=${encodedMessage}`;
+
+            // 5. Open the link in a new tab/window
+            window.open(whatsappLink, '_blank');
+            
+            // Give immediate feedback to the user on the page
+            formMessage.textContent = '✅ Redirecting you to WhatsApp with your order details now...';
+            formMessage.classList.remove('hidden', 'bg-red-500', 'text-white');
+            formMessage.classList.add('bg-secondary-teal', 'text-text-dark');
+            formMessage.scrollIntoView({ behavior: 'smooth' });
+
+            // Restore button text after a short delay
+            setTimeout(() => {
+                submitButton.disabled = false;
+                submitButton.innerHTML = '<i data-lucide="whatsapp" class="w-5 h-5 mr-2"></i> Send Request via WhatsApp';
+                lucide.createIcons();
+            }, 1000);
+            
+        });
+
+    </script>
+</body>
+</html>
